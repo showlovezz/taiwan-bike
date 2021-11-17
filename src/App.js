@@ -1,8 +1,15 @@
 import React from 'react';
 import './assets/scss/app.scss';
+import MenuNavbar from './components/MenuNavbar';
+import RouterView from './components/RouterView';
 
-function App() {
-  return <div>App</div>;
-}
+const App = () => {
+  return (
+    <>
+      <MenuNavbar />
+      <RouterView />
+    </>
+  );
+};
 
 export default App;
