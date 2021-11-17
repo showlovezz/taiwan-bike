@@ -1,0 +1,39 @@
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: #f7db8d;
+    font-size: 18px;
+    margin-bottom: 65px;
+  }
+
+  &__link-item + &__link-item {
+    margin-top: 74px;
+  }
+
+  &__link-item {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px 103px;
+    background-color: #f7db8d;
+    border-radius: 10px;
+    line-height: 26px;
+    text-align: center;
+
+    &:hover {
+      background-color: #3e4148;
+      > span {
+        color: #f7db8d;
+      }
+    }
+
+    > span {
+      color: #3e4148;
+    }
+  }
+}
