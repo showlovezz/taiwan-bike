@@ -36,6 +36,16 @@
   &__menubar {
     display: none;
   }
+
+  &__menu-item-active {
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &__rwd-text {
+    display: none;
+  }
 }
 
 /*Mobile View */
@@ -60,10 +70,11 @@
       justify-content: center;
       align-items: center;
       opacity: 0;
+      z-index: 1;
     }
 
     &__menu.active {
-      background-color: #212c31;
+      background-color: #212a31;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -100,6 +111,19 @@
     &__menubar-icon {
       width: 45px;
       height: 45px;
+    }
+
+    &__menu-item-active {
+      span {
+        font-weight: unset;
+      }
+    }
+
+    &__rwd-text {
+      display: block;
+      span {
+        color: #fff;
+      }
     }
   }
 }

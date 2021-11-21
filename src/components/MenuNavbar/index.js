@@ -22,19 +22,39 @@ const MenuNavbar = () => {
             <span>YuoBike</span>
           </Link>
         </div>
+        <div className="custom-navbar__rwd-text">
+          <span>
+            {location.pathname === '/find-bikes'
+              ? '找YouBike'
+              : location.pathname === '/find-bike-path'
+              ? '找路線'
+              : location.pathname === '/find-food-and-tour'
+              ? '找美食 / 景點'
+              : null}
+          </span>
+        </div>
         <ul className={click ? 'custom-navbar__menu active' : 'custom-navbar__menu'}>
           <li onClick={closeMobileMenu} className="custom-navbar__menu-item">
-            <Link to="/find-bikes">
+            <Link
+              to="/find-bikes"
+              className={location.pathname === '/find-bikes' ? 'custom-navbar__menu-item-active' : null}
+            >
               <span>找 YouBike</span>
             </Link>
           </li>
           <li onClick={closeMobileMenu} className="custom-navbar__menu-item">
-            <Link to="/find-bike-path">
+            <Link
+              to="/find-bike-path"
+              className={location.pathname === '/find-bike-path' ? 'custom-navbar__menu-item-active' : null}
+            >
               <span>找路線</span>
             </Link>
           </li>
           <li onClick={closeMobileMenu} className="custom-navbar__menu-item">
-            <Link to="/find-food-and-tour">
+            <Link
+              to="/find-food-and-tour"
+              className={location.pathname === '/find-food-and-tour' ? 'custom-navbar__menu-item-active' : null}
+            >
               <span>找美食 / 景點</span>
             </Link>
           </li>
