@@ -1,0 +1,21 @@
+.user-position {
+  background-color: #000;
+  position: absolute;
+  z-index: 999;
+  font-size: 20px;
+  border-radius: 75%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 5px 0;
+  cursor: pointer;
+  color: #fa0;
+  top: 85px;
+  right: 7px;
+
+  &:hover {
+    background-color: #fa0;
+    color: #000;
+    transform: rotate(-45deg) scale(1.1);
+  }
+}

@@ -1,0 +1,12 @@
+.loading-view {
+  height: calc(100vh - 87px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  opacity: 0.7;
+  background-color: #3e4148;
+  color: #f7db8d;
+}
