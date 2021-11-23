@@ -1,0 +1,13 @@
+.find-bike {
+  &__map {
+    height: calc(100vh - 87px);
+  }
+}
+
+@media (max-width: 648px) {
+  .find-bike {
+    &__map {
+      z-index: 0;
+    }
+  }
+}
